@@ -13,10 +13,10 @@ on:
   push:
     branches: 
       - master
-  # schedule:
-  #   - cron: 0 20 * * *
-  # release:
-  #   types: [published]
+  schedule:
+    - cron: 0 20 * * *
+  release:
+    types: [published]
 
 jobs:
 
@@ -157,7 +157,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-ipsec-vpnd=y
           CONFIG_PACKAGE_luci-app-pptp-server=y
           CONFIG_PACKAGE_luci-app-arpbind=y
-          CONFIG_PACKAGE_openwrt-fullconenat
+          CONFIG_PACKAGE_openwrt-fullconenat=y
           EOF
 
           # LuCI主题:
