@@ -7,16 +7,14 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 #
 
-name: OpenWrt-20200107
+name: OpenWrt-20200108
 
 on:
+  schedule:
+    - cron: 0 20 * * *
   push:
     branches: 
       - master
-  schedule:
-    - cron: 0 20 * * *
-  release:
-    types: [published]
 
 jobs:
 
